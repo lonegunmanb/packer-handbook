@@ -1,0 +1,1476 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>命令行(CLI) · 《Packer 中文手册》</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="大可不加冰">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vsc-dark-plus.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.init.html" />
+    
+    
+    <link rel="prev" href="../3.install_packer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.what_is_packer/overview.html">
+            
+                <a href="../1.what_is_packer/overview.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    什么是 Packer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.what_is_packer/1.immutable_infrasturcture.html">
+            
+                <a href="../1.what_is_packer/1.immutable_infrasturcture.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    拥抱不可变的基础设施
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.what_is_packer/2.what_is_packer.html">
+            
+                <a href="../1.what_is_packer/2.what_is_packer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    什么是 Packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.terminology.html">
+            
+                <a href="../2.terminology.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3.install_packer.html">
+            
+                <a href="../3.install_packer.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    安装 Packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    命令行(CLI)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.init.html">
+            
+                <a href="1.init.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.plugin/overview.html">
+            
+                <a href="2.plugin/overview.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    plugin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="2.plugin/1.install.html">
+            
+                <a href="2.plugin/1.install.html">
+            
+                    
+                        <b>1.5.2.1.</b>
+                    
+                    install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="2.plugin/2.installed.html">
+            
+                <a href="2.plugin/2.installed.html">
+            
+                    
+                        <b>1.5.2.2.</b>
+                    
+                    installed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="2.plugin/3.remove.html">
+            
+                <a href="2.plugin/3.remove.html">
+            
+                    
+                        <b>1.5.2.3.</b>
+                    
+                    remove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="2.plugin/4.required.html">
+            
+                <a href="2.plugin/4.required.html">
+            
+                    
+                        <b>1.5.2.4.</b>
+                    
+                    required
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.build.html">
+            
+                <a href="3.build.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.console.html">
+            
+                <a href="4.console.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.fix.html">
+            
+                <a href="5.fix.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    fix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.fmt.html">
+            
+                <a href="6.fmt.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.inspect.html">
+            
+                <a href="7.inspect.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    inspect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.validate.html">
+            
+                <a href="8.validate.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.template/overview.html">
+            
+                <a href="../5.template/overview.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    模板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.template/1.hcl/overview.html">
+            
+                <a href="../5.template/1.hcl/overview.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    HCL 模板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../5.template/1.hcl/1.blocks/overview.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/overview.html">
+            
+                    
+                        <b>1.6.1.1.</b>
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="../5.template/1.hcl/1.blocks/1.build/overview.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/overview.html">
+            
+                    
+                        <b>1.6.1.1.1.</b>
+                    
+                    build
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1.1" data-path="../5.template/1.hcl/1.blocks/1.build/1.hcp_packer_registry.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/1.hcp_packer_registry.html">
+            
+                    
+                        <b>1.6.1.1.1.1.</b>
+                    
+                    hcp_packer_registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.2" data-path="../5.template/1.hcl/1.blocks/1.build/2.source.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/2.source.html">
+            
+                    
+                        <b>1.6.1.1.1.2.</b>
+                    
+                    source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.3" data-path="../5.template/1.hcl/1.blocks/1.build/3.provisioner.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/3.provisioner.html">
+            
+                    
+                        <b>1.6.1.1.1.3.</b>
+                    
+                    provisioner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.4" data-path="../5.template/1.hcl/1.blocks/1.build/4.post-processor.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/4.post-processor.html">
+            
+                    
+                        <b>1.6.1.1.1.4.</b>
+                    
+                    post-processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.5" data-path="../5.template/1.hcl/1.blocks/1.build/5.post-processors.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/5.post-processors.html">
+            
+                    
+                        <b>1.6.1.1.1.5.</b>
+                    
+                    post-processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="../5.template/1.hcl/1.blocks/2.locals.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/2.locals.html">
+            
+                    
+                        <b>1.6.1.1.2.</b>
+                    
+                    locals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.3" data-path="../5.template/1.hcl/1.blocks/3.source.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/3.source.html">
+            
+                    
+                        <b>1.6.1.1.3.</b>
+                    
+                    source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.4" data-path="../5.template/1.hcl/1.blocks/4.variable.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/4.variable.html">
+            
+                    
+                        <b>1.6.1.1.4.</b>
+                    
+                    variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.5" data-path="../5.template/1.hcl/1.blocks/5.packer.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/5.packer.html">
+            
+                    
+                        <b>1.6.1.1.5.</b>
+                    
+                    packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.6" data-path="../5.template/1.hcl/1.blocks/6.data.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/6.data.html">
+            
+                    
+                        <b>1.6.1.1.6.</b>
+                    
+                    data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../5.template/1.hcl/2.variables.html">
+            
+                <a href="../5.template/1.hcl/2.variables.html">
+            
+                    
+                        <b>1.6.1.2.</b>
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../5.template/1.hcl/3.locals.html">
+            
+                <a href="../5.template/1.hcl/3.locals.html">
+            
+                    
+                        <b>1.6.1.3.</b>
+                    
+                    局部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../5.template/1.hcl/4.contextual_variables.html">
+            
+                <a href="../5.template/1.hcl/4.contextual_variables.html">
+            
+                    
+                        <b>1.6.1.4.</b>
+                    
+                    上下文变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../5.template/1.hcl/5.data_sources.html">
+            
+                <a href="../5.template/1.hcl/5.data_sources.html">
+            
+                    
+                        <b>1.6.1.5.</b>
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../5.template/1.hcl/6.path_variables.html">
+            
+                <a href="../5.template/1.hcl/6.path_variables.html">
+            
+                    
+                        <b>1.6.1.6.</b>
+                    
+                    路径变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../5.template/1.hcl/7.syntax.html">
+            
+                <a href="../5.template/1.hcl/7.syntax.html">
+            
+                    
+                        <b>1.6.1.7.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../5.template/1.hcl/8.only_except.html">
+            
+                <a href="../5.template/1.hcl/8.only_except.html">
+            
+                    
+                        <b>1.6.1.8.</b>
+                    
+                    Only 和 Except
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../5.template/1.hcl/9.expression.html">
+            
+                <a href="../5.template/1.hcl/9.expression.html">
+            
+                    
+                        <b>1.6.1.9.</b>
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="../5.template/1.hcl/10.json_syntax.html">
+            
+                <a href="../5.template/1.hcl/10.json_syntax.html">
+            
+                    
+                        <b>1.6.1.10.</b>
+                    
+                    JSON 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.communicators/overview.html">
+            
+                <a href="../6.communicators/overview.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    通信器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.communicators/1.ssh.html">
+            
+                <a href="../6.communicators/1.ssh.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6.communicators/2.winrm.html">
+            
+                <a href="../6.communicators/2.winrm.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    WinRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../7.builders/overview.html">
+            
+                <a href="../7.builders/overview.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    构建器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7.builders/1.file.html">
+            
+                <a href="../7.builders/1.file.html">
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    File Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7.builders/2.null.html">
+            
+                <a href="../7.builders/2.null.html">
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    Null Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7.builders/3.aws/overview.html">
+            
+                <a href="../7.builders/3.aws/overview.html">
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    Aws
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../7.builders/3.aws/1.ebs.html">
+            
+                <a href="../7.builders/3.aws/1.ebs.html">
+            
+                    
+                        <b>1.8.3.1.</b>
+                    
+                    ebs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7.builders/4.azure/overview.html">
+            
+                <a href="../7.builders/4.azure/overview.html">
+            
+                    
+                        <b>1.8.4.</b>
+                    
+                    Azure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../7.builders/4.azure/1.arm.html">
+            
+                <a href="../7.builders/4.azure/1.arm.html">
+            
+                    
+                        <b>1.8.4.1.</b>
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7.builders/5.alicloud-ecs.html">
+            
+                <a href="../7.builders/5.alicloud-ecs.html">
+            
+                    
+                        <b>1.8.5.</b>
+                    
+                    Alicloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../8.data_sources/overview.html">
+            
+                <a href="../8.data_sources/overview.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8.data_sources/1.http.html">
+            
+                <a href="../8.data_sources/1.http.html">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../9.provisioners/overview.html">
+            
+                <a href="../9.provisioners/overview.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    配置器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../9.provisioners/1.break_point.html">
+            
+                <a href="../9.provisioners/1.break_point.html">
+            
+                    
+                        <b>1.10.1.</b>
+                    
+                    断点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../9.provisioners/2.file.html">
+            
+                <a href="../9.provisioners/2.file.html">
+            
+                    
+                        <b>1.10.2.</b>
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../9.provisioners/3.powershell.html">
+            
+                <a href="../9.provisioners/3.powershell.html">
+            
+                    
+                        <b>1.10.3.</b>
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../9.provisioners/4.shell.html">
+            
+                <a href="../9.provisioners/4.shell.html">
+            
+                    
+                        <b>1.10.4.</b>
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../9.provisioners/5.shell-local.html">
+            
+                <a href="../9.provisioners/5.shell-local.html">
+            
+                    
+                        <b>1.10.5.</b>
+                    
+                    Local Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../9.provisioners/6.windows-shell.html">
+            
+                <a href="../9.provisioners/6.windows-shell.html">
+            
+                    
+                        <b>1.10.6.</b>
+                    
+                    Windows Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../9.provisioners/7.windows-restart.html">
+            
+                <a href="../9.provisioners/7.windows-restart.html">
+            
+                    
+                        <b>1.10.7.</b>
+                    
+                    Windows Restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../10.post-processors/overview.html">
+            
+                <a href="../10.post-processors/overview.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    后处理器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10.post-processors/1.artifice.html">
+            
+                <a href="../10.post-processors/1.artifice.html">
+            
+                    
+                        <b>1.11.1.</b>
+                    
+                    Artifice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10.post-processors/2.compress.html">
+            
+                <a href="../10.post-processors/2.compress.html">
+            
+                    
+                        <b>1.11.2.</b>
+                    
+                    Compress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10.post-processors/3.checksum.html">
+            
+                <a href="../10.post-processors/3.checksum.html">
+            
+                    
+                        <b>1.11.3.</b>
+                    
+                    Checksum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10.post-processors/4.docker-push.html">
+            
+                <a href="../10.post-processors/4.docker-push.html">
+            
+                    
+                        <b>1.11.4.</b>
+                    
+                    Docker Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../10.post-processors/5.manifest.html">
+            
+                <a href="../10.post-processors/5.manifest.html">
+            
+                    
+                        <b>1.11.5.</b>
+                    
+                    Manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../10.post-processors/6.local_shell.html">
+            
+                <a href="../10.post-processors/6.local_shell.html">
+            
+                    
+                        <b>1.11.6.</b>
+                    
+                    Local Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../11.postscript/overview.html">
+            
+                <a href="../11.postscript/overview.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    后记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11.postscript/1.html">
+            
+                <a href="../11.postscript/1.html">
+            
+                    
+                        <b>1.12.1.</b>
+                    
+                    中国的出路在于出海
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11.postscript/2.html">
+            
+                <a href="../11.postscript/2.html">
+            
+                    
+                        <b>1.12.2.</b>
+                    
+                    真后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >命令行(CLI)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="packer-&#x547D;&#x4EE4;&#x884C;-cli">Packer &#x547D;&#x4EE4;&#x884C; (CLI)</h1>
+<p><a href="https://developer.hashicorp.com/packer/docs/commands" target="_blank"><em>&#x539F;&#x6587;</em></a></p>
+<hr>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x64CD;&#x4F5C; Packer&#xFF0C;&#x6240;&#x6709;&#x4E0E; Packer &#x7684;&#x4EA4;&#x4E92;&#x90FD;&#x662F;&#x901A;&#x8FC7; <code>packer</code> &#x5DE5;&#x5177;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x4E0E;&#x8BB8;&#x591A;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x4E00;&#x6837;&#xFF0C;<code>packer</code> &#x5DE5;&#x5177;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5B50;&#x547D;&#x4EE4;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x5B50;&#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x80FD;&#x6709;&#x5176;&#x4ED6;&#x9009;&#x9879;&#x3002;&#x5B50;&#x547D;&#x4EE4;&#x4F7F;&#x7528; <code>packer SUBCOMMAND</code> &#x6267;&#x884C;&#xFF0C;&#x5176;&#x4E2D; <code>SUBCOMMAND</code> &#x662F;&#x60A8;&#x5E0C;&#x671B;&#x6267;&#x884C;&#x7684;&#x5B9E;&#x9645;&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5355;&#x72EC;&#x8FD0;&#x884C; <code>packer</code>&#xFF0C;&#x5C06;&#x663E;&#x793A;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x5B50;&#x547D;&#x4EE4;&#x548C;&#x5B83;&#x4EEC;&#x6240;&#x505A;&#x7684;&#x7B80;&#x8981;&#x6982;&#x8981;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5E26;&#x6709; <code>-h</code> &#x6807;&#x5FD7;&#x7684;&#x4EFB;&#x610F; <code>packer</code> &#x547D;&#x4EE4;&#x6765;&#x4E3A;&#x7279;&#x5B9A;&#x5B50;&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x5C06;&#x5305;&#x542B;&#x6709;&#x5173;&#x6BCF;&#x4E2A;&#x5B50;&#x547D;&#x4EE4;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x8F93;&#x51FA;">&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x8F93;&#x51FA;</h2>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Packer &#x7684;&#x8F93;&#x51FA;&#x975E;&#x5E38;&#x6613;&#x4E8E;&#x4EBA;&#x7C7B;&#x9605;&#x8BFB;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x6F02;&#x4EAE;&#x7684;&#x683C;&#x5F0F;&#x3001;&#x95F4;&#x8DDD;&#x548C;&#x989C;&#x8272;&#xFF0C;&#x4EE5;&#x4F7F; Packer &#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x3002;&#x4F46;&#x662F;&#xFF0C;Packer &#x4E5F;&#x8003;&#x8651;&#x5230;&#x4E86;&#x81EA;&#x52A8;&#x5316;&#x573A;&#x666F;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;Packer &#x4E5F;&#x652F;&#x6301;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x8F93;&#x51FA;&#x8BBE;&#x7F6E;&#xFF0C;&#x5141;&#x8BB8;&#x60A8;&#x5728;&#x81EA;&#x52A8;&#x5316;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528; Packer&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x662F;&#x9762;&#x5411; Unix &#x5DE5;&#x5177;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x662F;&#x6613;&#x4E8E;&#x88AB; <code>awk</code>/<code>sed</code>/<code>grep</code> &#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5DE5;&#x5177;&#x5904;&#x7406;&#x7684;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x719F;&#x6089;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x65E0;&#x9700;&#x60A8;&#x5B66;&#x4E60;&#x65B0;&#x683C;&#x5F0F;&#x3002;</p>
+<h3 id="&#x542F;&#x7528;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x8F93;&#x51FA;">&#x542F;&#x7528;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x8F93;&#x51FA;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BF9;&#x4EFB;&#x610F; Packer &#x547D;&#x4EE4;&#x6DFB;&#x52A0; <code>-machine-readable</code> &#x6807;&#x5FD7;&#x4F4D;&#x6765;&#x542F;&#x7528;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x3002;&#x8FD9;&#x7ACB;&#x5373;&#x4F7F;&#x6240;&#x6709;&#x8F93;&#x51FA;&#x5728;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x6D41;&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#x53D8;&#x4E3A;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x3002;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF08;&#x5982;&#x679C;&#x542F;&#x7528;&#xFF09;&#x4F1A;&#x7EE7;&#x7EED;&#x51FA;&#x73B0;&#x5728;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x6D41;&#x4E0A;&#x3002;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">$ packer -machine-readable version
+<span class="token number">1498365963</span>,,version,1.0.2
+<span class="token number">1498365963</span>,,version-prelease,
+<span class="token number">1498365963</span>,,version-commit,3ead2750b+CHANGES
+<span class="token number">1498365963</span>,,ui,say,Packer v1.0.2
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x540E;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x79CD;&#x5C06;&#x66F4;&#x8BE6;&#x7EC6;&#x5730;&#x4ECB;&#x7ECD;&#x8BE5;&#x683C;&#x5F0F;&#x3002;&#x4F46;&#x6B63;&#x5982;&#x60A8;&#x6240;&#x89C1;&#xFF0C;&#x8F93;&#x51FA;&#x7ACB;&#x5373;&#x53D8;&#x5F97;&#x5BF9;&#x673A;&#x5668;&#x53CB;&#x597D;&#x3002;&#x5C1D;&#x8BD5;&#x5176;&#x4ED6;&#x7684;&#x4E00;&#x4E9B;&#x5E26;&#x6709; <code>-machine-readable</code> &#x6807;&#x5FD7;&#x7684;&#x547D;&#x4EE4;&#x770B;&#x770B;&#xFF01;</p>
+<p>&#x5907;&#x6CE8;&#xFF1A;<code>-machine-readable</code> &#x6807;&#x5FD7;&#x662F;&#x4E3A;&#x81EA;&#x52A8;&#x5316;&#x73AF;&#x5883;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4E0E; <code>-debug</code> &#x6807;&#x5FD7;&#x662F;&#x4E92;&#x65A5;&#x7684;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x4E3A;&#x4EA4;&#x4E92;&#x5F0F;&#x73AF;&#x5883;&#x8BBE;&#x8BA1;&#x7684;&#x3002;</p>
+<h3 id="&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x683C;&#x5F0F;">&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x683C;&#x5F0F;</h3>
+<p>&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x683C;&#x5F0F;&#x662F;&#x9762;&#x5411;&#x884C;&#x7684;&#x3001;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x4F7F;&#x7528;&#x6807;&#x51C6; Unix &#x5DE5;&#x5177;&#xFF08;&#x4F8B;&#x5982; <code>awk</code> &#x6216; <code>grep</code>&#xFF09;&#x4EE5;&#x53CA;&#x901A;&#x7528;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF08;&#x4F8B;&#x5982; Ruby &#x6216; Python&#xFF09;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#x5730;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-text">timestamp,target,type,data...
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x89E3;&#x91CA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><code>timestamp</code> - &#x662F;&#x6D88;&#x606F;&#x6253;&#x5370;&#x65F6;&#x7684; UTC Unix &#x65F6;&#x95F4;&#x6233;&#x3002;</li>
+<li><code>target</code> - &#x5F53;&#x8C03;&#x7528; <code>packer build</code> &#x65F6;&#xFF0C;<code>target</code> &#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6784;&#x5EFA;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;:<code>amazon-ebs</code>&#x3002;&#x5F53;&#x6784;&#x5EFA;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x65F6;&#x5B83;&#x901A;&#x5E38;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x5F53;&#x5F15;&#x7528;&#x7279;&#x5B9A;&#x6784;&#x5EFA;&#x7684;&#x5236;&#x54C1;&#x65F6;&#x5B83;&#x662F;&#x6784;&#x5EFA;&#x540D;&#x79F0;&#x3002;</li>
+<li><code>type</code> - &#x662F;&#x6B63;&#x5728;&#x8F93;&#x51FA;&#x7684;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x662F; <code>ui</code> &#x548C; <code>artifact</code>&#x3002;</li>
+<li><code>data</code> - &#x662F;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4E0E;&#x5148;&#x524D; <code>type</code> &#x5173;&#x8054;&#x7684;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x503C;&#x3002;&#x8BE5;&#x6570;&#x636E;&#x7684;&#x6570;&#x91CF;&#x548C;&#x542B;&#x4E49;&#x53D6;&#x51B3;&#x4E8E; <code>type</code>&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x9605;&#x8BFB;&#x4E0E;&#x7C7B;&#x578B;&#x76F8;&#x5173;&#x7684;&#x6587;&#x6863;&#x624D;&#x80FD;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5305;&#x542B;&#x9017;&#x53F7;&#xFF0C;&#x5B83;&#x5C06;&#x66FF;&#x6362;&#x4E3A; <code>%!(PACKER_COMMA)</code>&#x3002;&#x8FD9;&#x6BD4;&#x7528;&#x8BF8;&#x5982; <code>\&apos;</code> &#x4E4B;&#x7C7B;&#x7684;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x8981;&#x66F4;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BF9; <code>awk</code> &#x4E4B;&#x7C7B;&#x7684;&#x5DE5;&#x5177;&#x66F4;&#x53CB;&#x597D;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#x5316;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x6362;&#x884C;&#x7B26;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x5404;&#x81EA;&#x7684;&#x6807;&#x51C6;&#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x3002;&#x6362;&#x884C;&#x7B26;&#x5728;&#x8F93;&#x51FA;&#x4E2D;&#x53D8;&#x4E3A; <code>\n</code>&#x3002;&#x56DE;&#x8F66;&#x53D8;&#x4E3A; <code>\r</code>&#x3002;</p>
+<h3 id="&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;">&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x6D88;&#x606F;&#x7684;&#x7C7B;&#x578B;</h3>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4EFD;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x8F93;&#x51FA;&#x4E2D;&#x770B;&#x5230;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x5B8C;&#x6574;&#x5217;&#x8868;&#xFF0C;&#x5F53;&#x4F60;&#x8FD0;&#x884C; <code>packer build</code> &#x65F6;&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li><code>ui</code>: &#x8FD9;&#x8868;&#x793A;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5373;&#x4F7F;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x6210;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x4E5F;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230; stdout&#x3002;&#x4E0E;&#x6B64;&#x7C7B;&#x578B;&#x76F8;&#x5173;&#x8054;&#x7684;&#x6709;&#x4E09;&#x79CD;&#x201C;&#x6570;&#x636E;&#x201D;&#x5B50;&#x7C7B;&#x578B;&#xFF1A;<ul>
+<li><code>say</code>: &#x5728;&#x975E;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x683C;&#x5F0F;&#x4E2D;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x8868;&#x793A;&#x52A0;&#x7C97;&#x3002;&#x901A;&#x5E38;&#x5B83;&#x7528;&#x4E8E;&#x5173;&#x4E8E;&#x5728;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F00;&#x59CB;&#x65B0;&#x6B65;&#x9AA4;&#x7684;&#x516C;&#x544A;</li>
+<li><code>message</code>: &#x6700;&#x5E38;&#x7528;&#x7684;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#xFF0C;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x66F4;&#x65B0;&#x4FE1;&#x606F;</li>
+<li><code>error</code>: &#x9519;&#x8BEF;&#x4FE1;&#x606F;</li>
+</ul>
+</li>
+<li><code>artifact-count</code>: &#x8BE5;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x6784;&#x5EFA;&#x4EA7;&#x751F;&#x4E86;&#x591A;&#x5C11;&#x5236;&#x54C1;</li>
+<li><code>artifact</code>: &#x8BE5;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x544A;&#x8BC9;&#x6211;&#x4EEC; Packer &#x5728;&#x6784;&#x5EFA;&#x671F;&#x95F4;&#x521B;&#x5EFA;&#x4EC0;&#x4E48;&#x3002;&#x8F93;&#x51FA;&#x7684;&#x683C;&#x5F0F;&#x6A21;&#x5F0F;&#x4E3A;&#xFF1A; <code>timestamp, buildname, artifact, artifact_number, key, value</code>&#xFF0C;&#x5176;&#x4E2D; <code>key</code> &#x548C; <code>value</code> &#x5305;&#x542B;&#x6709;&#x5173;&#x5236;&#x54C1;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;<pre class="language-"><code class="lang-text">1539967803,,ui,say,\n==&gt; Builds finished. The artifacts of successful builds are:
+1539967803,amazon-ebs,artifact-count,2
+1539967803,amazon-ebs,artifact,0,builder-id,mitchellh.amazonebs
+1539967803,amazon-ebs,artifact,0,id,eu-west-1:ami-04d23aca8bdd36e30
+1539967803,amazon-ebs,artifact,0,string,AMIs were created:\neu-west-1: ami-04d23aca8bdd36e30\n
+1539967803,amazon-ebs,artifact,0,files-count,0
+1539967803,amazon-ebs,artifact,0,end
+1539967803,,ui,say,--&gt; amazon-ebs: AMIs were created:\neu-west-1: ami-04d23aca8bdd36e30\n
+1539967803,amazon-ebs,artifact,1,builder-id,
+1539967803,amazon-ebs,artifact,1,id,
+1539967803,amazon-ebs,artifact,1,string,
+1539967803,amazon-ebs,artifact,1,files-count,0
+2018/10/19 09:50:03 waiting for all plugin processes to complete...
+1539967803,amazon-ebs,artifact,1,end
+</code></pre>
+</li>
+</ul>
+<p>&#x8FD0;&#x884C; <code>packer version</code> &#x65F6;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li><code>version</code>: &#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684; Packer &#x7684;&#x7248;&#x672C;</li>
+<li><code>version-prerelease</code>: &#x5982;&#x679C;&#x5F53;&#x524D;&#x7248;&#x672C;&#x662F;&#x9884;&#x53D1;&#x5E03;&#x7248;&#x8BE5;&#x503C;&#x4E3A; <code>dev</code>&#xFF0C;&#x5426;&#x5219;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><code>version-commit</code>: &#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684; Packer &#x6240;&#x5C5E;&#x5206;&#x652F;&#x7684; git hash&#xFF1B;&#x4E00;&#x822C;&#x7528;&#x4E8E; Packer &#x5F00;&#x53D1;&#x4EBA;&#x5458;</li>
+</ul>
+<h2 id="&#x81EA;&#x52A8;&#x8865;&#x5168;">&#x81EA;&#x52A8;&#x8865;&#x5168;</h2>
+<p><code>packer</code> &#x547D;&#x4EE4;&#x5177;&#x6709;&#x53EF;&#x9009;&#x7684;&#x5B50;&#x547D;&#x4EE4;&#x542F;&#x7528;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C; <code>packer -autocomplete-install</code> &#x4E3A;&#x60A8;&#x4F7F;&#x7528;&#x7684; shell &#x542F;&#x7528;&#x8BE5;&#x529F;&#x80FD;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x4E4B;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684; shell &#x5E76;&#x4F7F;&#x7528;&#x8BE5;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5982;&#x6211;&#x4EEC;&#x5728;&#x6BCF;&#x4E2A;&#x63D0;&#x793A;&#x884C;&#x7684;&#x672B;&#x5C3E;&#x8F93;&#x5165;&#x4E00;&#x4E2A; <code>tab</code>&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">$ packer p
+plugin  build
+$ packer build -
+<span class="token parameter variable">-color</span>             <span class="token parameter variable">-debug</span>             <span class="token parameter variable">-except</span>            <span class="token parameter variable">-force</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../3.install_packer.html" class="navigation navigation-prev " aria-label="Previous page: 安装 Packer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.init.html" class="navigation navigation-next " aria-label="Next page: init">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"命令行(CLI)","level":"1.5","depth":1,"next":{"title":"init","level":"1.5.1","depth":2,"path":"4.cli/1.init.md","ref":"4.cli/1.init.md","articles":[]},"previous":{"title":"安装 Packer","level":"1.4","depth":1,"path":"3.install_packer.md","ref":"3.install_packer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","prism-themes","fontsettings","sharing","-lunr","-search","search-pro","livereload","image-captions","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-vsc-dark-plus.css"],"lang":{"shell":"bash","cmd":"bash"}},"livereload":{},"search-pro":{},"sitemap-general":{"prefix":"https://lonegunmanb.github.io/packer-handbook/"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism-themes":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"大可不加冰","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: HashiStack","alt":"HashiStack","nro":1,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/Full%2520Stack_onBlack%25402x.png","index":1,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"HashiStack","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"11.postscript/1.html#fig1.12.1.1","level":"1.12.1","list_caption":"Figure: 芯片战争","alt":"芯片战争","nro":2,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715201209.png","index":1,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"芯片战争","attributes":{},"skip":false,"key":"1.12.1.1"},{"backlink":"11.postscript/1.html#fig1.12.1.2","level":"1.12.1","list_caption":"Figure: 芯片的第一个实际应用——激光制导炸弹炸断清化大桥","alt":"芯片的第一个实际应用——激光制导炸弹炸断清化大桥","nro":3,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715211713.png","index":2,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"芯片的第一个实际应用——激光制导炸弹炸断清化大桥","attributes":{},"skip":false,"key":"1.12.1.2"},{"backlink":"11.postscript/1.html#fig1.12.1.3","level":"1.12.1","list_caption":"Figure: Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","alt":"Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","nro":4,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715213557.png","index":3,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","attributes":{},"skip":false,"key":"1.12.1.3"}]},"title":"《Packer 中文手册》","gitbook":"*"},"file":{"path":"4.cli/overview.md","mtime":"2023-07-30T13:43:44.854Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T12:25:09.052Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+

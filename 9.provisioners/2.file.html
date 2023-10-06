@@ -1,0 +1,1557 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>文件 · 《Packer 中文手册》</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="大可不加冰">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vsc-dark-plus.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.powershell.html" />
+    
+    
+    <link rel="prev" href="1.break_point.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.what_is_packer/overview.html">
+            
+                <a href="../1.what_is_packer/overview.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    什么是 Packer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1.what_is_packer/1.immutable_infrasturcture.html">
+            
+                <a href="../1.what_is_packer/1.immutable_infrasturcture.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    拥抱不可变的基础设施
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1.what_is_packer/2.what_is_packer.html">
+            
+                <a href="../1.what_is_packer/2.what_is_packer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    什么是 Packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2.terminology.html">
+            
+                <a href="../2.terminology.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3.install_packer.html">
+            
+                <a href="../3.install_packer.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    安装 Packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4.cli/overview.html">
+            
+                <a href="../4.cli/overview.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    命令行(CLI)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4.cli/1.init.html">
+            
+                <a href="../4.cli/1.init.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4.cli/2.plugin/overview.html">
+            
+                <a href="../4.cli/2.plugin/overview.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    plugin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../4.cli/2.plugin/1.install.html">
+            
+                <a href="../4.cli/2.plugin/1.install.html">
+            
+                    
+                        <b>1.5.2.1.</b>
+                    
+                    install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../4.cli/2.plugin/2.installed.html">
+            
+                <a href="../4.cli/2.plugin/2.installed.html">
+            
+                    
+                        <b>1.5.2.2.</b>
+                    
+                    installed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../4.cli/2.plugin/3.remove.html">
+            
+                <a href="../4.cli/2.plugin/3.remove.html">
+            
+                    
+                        <b>1.5.2.3.</b>
+                    
+                    remove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../4.cli/2.plugin/4.required.html">
+            
+                <a href="../4.cli/2.plugin/4.required.html">
+            
+                    
+                        <b>1.5.2.4.</b>
+                    
+                    required
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4.cli/3.build.html">
+            
+                <a href="../4.cli/3.build.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4.cli/4.console.html">
+            
+                <a href="../4.cli/4.console.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4.cli/5.fix.html">
+            
+                <a href="../4.cli/5.fix.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    fix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4.cli/6.fmt.html">
+            
+                <a href="../4.cli/6.fmt.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4.cli/7.inspect.html">
+            
+                <a href="../4.cli/7.inspect.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    inspect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../4.cli/8.validate.html">
+            
+                <a href="../4.cli/8.validate.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5.template/overview.html">
+            
+                <a href="../5.template/overview.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    模板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5.template/1.hcl/overview.html">
+            
+                <a href="../5.template/1.hcl/overview.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    HCL 模板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../5.template/1.hcl/1.blocks/overview.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/overview.html">
+            
+                    
+                        <b>1.6.1.1.</b>
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="../5.template/1.hcl/1.blocks/1.build/overview.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/overview.html">
+            
+                    
+                        <b>1.6.1.1.1.</b>
+                    
+                    build
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1.1" data-path="../5.template/1.hcl/1.blocks/1.build/1.hcp_packer_registry.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/1.hcp_packer_registry.html">
+            
+                    
+                        <b>1.6.1.1.1.1.</b>
+                    
+                    hcp_packer_registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.2" data-path="../5.template/1.hcl/1.blocks/1.build/2.source.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/2.source.html">
+            
+                    
+                        <b>1.6.1.1.1.2.</b>
+                    
+                    source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.3" data-path="../5.template/1.hcl/1.blocks/1.build/3.provisioner.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/3.provisioner.html">
+            
+                    
+                        <b>1.6.1.1.1.3.</b>
+                    
+                    provisioner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.4" data-path="../5.template/1.hcl/1.blocks/1.build/4.post-processor.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/4.post-processor.html">
+            
+                    
+                        <b>1.6.1.1.1.4.</b>
+                    
+                    post-processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.1.5" data-path="../5.template/1.hcl/1.blocks/1.build/5.post-processors.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/1.build/5.post-processors.html">
+            
+                    
+                        <b>1.6.1.1.1.5.</b>
+                    
+                    post-processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="../5.template/1.hcl/1.blocks/2.locals.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/2.locals.html">
+            
+                    
+                        <b>1.6.1.1.2.</b>
+                    
+                    locals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.3" data-path="../5.template/1.hcl/1.blocks/3.source.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/3.source.html">
+            
+                    
+                        <b>1.6.1.1.3.</b>
+                    
+                    source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.4" data-path="../5.template/1.hcl/1.blocks/4.variable.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/4.variable.html">
+            
+                    
+                        <b>1.6.1.1.4.</b>
+                    
+                    variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.5" data-path="../5.template/1.hcl/1.blocks/5.packer.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/5.packer.html">
+            
+                    
+                        <b>1.6.1.1.5.</b>
+                    
+                    packer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.6" data-path="../5.template/1.hcl/1.blocks/6.data.html">
+            
+                <a href="../5.template/1.hcl/1.blocks/6.data.html">
+            
+                    
+                        <b>1.6.1.1.6.</b>
+                    
+                    data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../5.template/1.hcl/2.variables.html">
+            
+                <a href="../5.template/1.hcl/2.variables.html">
+            
+                    
+                        <b>1.6.1.2.</b>
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../5.template/1.hcl/3.locals.html">
+            
+                <a href="../5.template/1.hcl/3.locals.html">
+            
+                    
+                        <b>1.6.1.3.</b>
+                    
+                    局部变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../5.template/1.hcl/4.contextual_variables.html">
+            
+                <a href="../5.template/1.hcl/4.contextual_variables.html">
+            
+                    
+                        <b>1.6.1.4.</b>
+                    
+                    上下文变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../5.template/1.hcl/5.data_sources.html">
+            
+                <a href="../5.template/1.hcl/5.data_sources.html">
+            
+                    
+                        <b>1.6.1.5.</b>
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../5.template/1.hcl/6.path_variables.html">
+            
+                <a href="../5.template/1.hcl/6.path_variables.html">
+            
+                    
+                        <b>1.6.1.6.</b>
+                    
+                    路径变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../5.template/1.hcl/7.syntax.html">
+            
+                <a href="../5.template/1.hcl/7.syntax.html">
+            
+                    
+                        <b>1.6.1.7.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../5.template/1.hcl/8.only_except.html">
+            
+                <a href="../5.template/1.hcl/8.only_except.html">
+            
+                    
+                        <b>1.6.1.8.</b>
+                    
+                    Only 和 Except
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../5.template/1.hcl/9.expression.html">
+            
+                <a href="../5.template/1.hcl/9.expression.html">
+            
+                    
+                        <b>1.6.1.9.</b>
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="../5.template/1.hcl/10.json_syntax.html">
+            
+                <a href="../5.template/1.hcl/10.json_syntax.html">
+            
+                    
+                        <b>1.6.1.10.</b>
+                    
+                    JSON 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6.communicators/overview.html">
+            
+                <a href="../6.communicators/overview.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    通信器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6.communicators/1.ssh.html">
+            
+                <a href="../6.communicators/1.ssh.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6.communicators/2.winrm.html">
+            
+                <a href="../6.communicators/2.winrm.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    WinRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../7.builders/overview.html">
+            
+                <a href="../7.builders/overview.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    构建器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7.builders/1.file.html">
+            
+                <a href="../7.builders/1.file.html">
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    File Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7.builders/2.null.html">
+            
+                <a href="../7.builders/2.null.html">
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    Null Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7.builders/3.aws/overview.html">
+            
+                <a href="../7.builders/3.aws/overview.html">
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    Aws
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../7.builders/3.aws/1.ebs.html">
+            
+                <a href="../7.builders/3.aws/1.ebs.html">
+            
+                    
+                        <b>1.8.3.1.</b>
+                    
+                    ebs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7.builders/4.azure/overview.html">
+            
+                <a href="../7.builders/4.azure/overview.html">
+            
+                    
+                        <b>1.8.4.</b>
+                    
+                    Azure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../7.builders/4.azure/1.arm.html">
+            
+                <a href="../7.builders/4.azure/1.arm.html">
+            
+                    
+                        <b>1.8.4.1.</b>
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7.builders/5.alicloud-ecs.html">
+            
+                <a href="../7.builders/5.alicloud-ecs.html">
+            
+                    
+                        <b>1.8.5.</b>
+                    
+                    Alicloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../8.data_sources/overview.html">
+            
+                <a href="../8.data_sources/overview.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8.data_sources/1.http.html">
+            
+                <a href="../8.data_sources/1.http.html">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    配置器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="1.break_point.html">
+            
+                <a href="1.break_point.html">
+            
+                    
+                        <b>1.10.1.</b>
+                    
+                    断点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.2" data-path="2.file.html">
+            
+                <a href="2.file.html">
+            
+                    
+                        <b>1.10.2.</b>
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="3.powershell.html">
+            
+                <a href="3.powershell.html">
+            
+                    
+                        <b>1.10.3.</b>
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="4.shell.html">
+            
+                <a href="4.shell.html">
+            
+                    
+                        <b>1.10.4.</b>
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="5.shell-local.html">
+            
+                <a href="5.shell-local.html">
+            
+                    
+                        <b>1.10.5.</b>
+                    
+                    Local Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="6.windows-shell.html">
+            
+                <a href="6.windows-shell.html">
+            
+                    
+                        <b>1.10.6.</b>
+                    
+                    Windows Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="7.windows-restart.html">
+            
+                <a href="7.windows-restart.html">
+            
+                    
+                        <b>1.10.7.</b>
+                    
+                    Windows Restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../10.post-processors/overview.html">
+            
+                <a href="../10.post-processors/overview.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    后处理器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10.post-processors/1.artifice.html">
+            
+                <a href="../10.post-processors/1.artifice.html">
+            
+                    
+                        <b>1.11.1.</b>
+                    
+                    Artifice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10.post-processors/2.compress.html">
+            
+                <a href="../10.post-processors/2.compress.html">
+            
+                    
+                        <b>1.11.2.</b>
+                    
+                    Compress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10.post-processors/3.checksum.html">
+            
+                <a href="../10.post-processors/3.checksum.html">
+            
+                    
+                        <b>1.11.3.</b>
+                    
+                    Checksum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10.post-processors/4.docker-push.html">
+            
+                <a href="../10.post-processors/4.docker-push.html">
+            
+                    
+                        <b>1.11.4.</b>
+                    
+                    Docker Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../10.post-processors/5.manifest.html">
+            
+                <a href="../10.post-processors/5.manifest.html">
+            
+                    
+                        <b>1.11.5.</b>
+                    
+                    Manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../10.post-processors/6.local_shell.html">
+            
+                <a href="../10.post-processors/6.local_shell.html">
+            
+                    
+                        <b>1.11.6.</b>
+                    
+                    Local Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../11.postscript/overview.html">
+            
+                <a href="../11.postscript/overview.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    后记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11.postscript/1.html">
+            
+                <a href="../11.postscript/1.html">
+            
+                    
+                        <b>1.12.1.</b>
+                    
+                    中国的出路在于出海
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11.postscript/2.html">
+            
+                <a href="../11.postscript/2.html">
+            
+                    
+                        <b>1.12.2.</b>
+                    
+                    真后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >文件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;">&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;</h1>
+<p><a href="https://developer.hashicorp.com/packer/docs/provisioners/file" target="_blank">&#x539F;&#x6587;</a></p>
+<hr>
+<p>&#x7C7B;&#x578B;&#xFF1A; <code>file</code></p>
+<p>Packer &#x7684;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x53EF;&#x4EE5;&#x5C06;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;&#x7531; Packer &#x6784;&#x5EFA;&#x7684;&#x673A;&#x5668;&#x4E0A;&#x3002;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; <a href="4.shell.html"><code>shell</code> &#x914D;&#x7F6E;&#x5668;</a>&#x5C06;&#x5B83;&#x4EEC;&#x79FB;&#x52A8;&#x5230;&#x6B63;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8BBE;&#x7F6E;&#x6743;&#x9650;&#x7B49;&#x3002;</p>
+<p>&#x8B66;&#x544A;&#xFF1A;&#x60A8;&#x53EA;&#x80FD;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5230;&#x914D;&#x7F6E;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#xFF08;&#x901A;&#x5E38;&#x4E0D;&#x662F;root&#x7528;&#x6237;&#xFF09;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5728; <code>/tmp</code> &#x4E2D;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; shell &#x914D;&#x7F6E;&#x5668;&#x5C06;&#x5B83;&#x4EEC;&#x79FB;&#x52A8;&#x5230;&#x76EE;&#x6807;&#x4F4D;&#x7F6E;&#xFF0C;&#x662F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5230; root &#x6240;&#x62E5;&#x6709;&#x7684;&#x76EE;&#x5F55;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x6574;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</p>
+<h2 id="&#x57FA;&#x7840;&#x6837;&#x4F8B;">&#x57FA;&#x7840;&#x6837;&#x4F8B;</h2>
+<p>JSON&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;source&quot;</span><span class="token operator">:</span> <span class="token string">&quot;app.tar.gz&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;destination&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/tmp/app.tar.gz&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>HCL&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">provisioner<span class="token type variable"> &quot;file&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;app.tar.gz&quot;</span>
+  <span class="token property">destination</span> <span class="token punctuation">=</span> <span class="token string">&quot;/tmp/app.tar.gz&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x914D;&#x7F6E;&#x53C2;&#x6570;">&#x914D;&#x7F6E;&#x53C2;&#x6570;</h2>
+<p>&#x5FC5;&#x586B;&#x53C2;&#x6570;&#xFF1A;</p>
+<p><code>content</code> (string) - &#x8FD9;&#x662F;&#x8981;&#x590D;&#x5236;&#x5230;&#x76EE;&#x7684;&#x5730;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x679C; <code>destination</code> &#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x5C06;&#x88AB;&#x5199;&#x5165;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>pkr-file-content</code> &#x7684;&#x6587;&#x4EF6;&#x3002;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x76EE;&#x6807;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x5904;&#x4F7F;&#x7528; <code>templatefile</code> &#x51FD;&#x6570;&#x6216;&#x4EFB;&#x4F55;&#x63D2;&#x503C;&#x8BED;&#x6CD5;&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x4E0D;&#x53EF;&#x4E0E; <code>source</code> &#x6216; <code>sources</code> &#x4E00;&#x540C;&#x8BBE;&#x7F6E;&#x3002;
+<code>source</code> (string) - &#x8981;&#x4E0A;&#x4F20;&#x5230;&#x673A;&#x5668;&#x7684;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x662F;&#x7EDD;&#x5BF9;&#x7684;&#x6216;&#x76F8;&#x5BF9;&#x7684;&#x3002;&#x5982;&#x679C;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5C31;&#x662F;&#x76F8;&#x5BF9;&#x4E8E; Packer &#x6267;&#x884C;&#x65F6;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x8DEF;&#x5F84;&#x52A1;&#x5FC5;&#x4EE5;&#x659C;&#x6760;&#x7ED3;&#x5C3E;&#x3002;&#x4E0B;&#x6587;&#x4F1A;&#x8BE6;&#x8FF0;&#x5173;&#x4E8E;&#x4E0A;&#x4F20;&#x76EE;&#x5F55;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x9664;&#x975E;&#x8BBE;&#x7F6E;&#x4E86; <code>sources</code>&#xFF0C;&#x5426;&#x5219;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x8BE5;&#x53C2;&#x6570;&#x3002;
+<code>destination</code> (string) - &#x6587;&#x4EF6;&#x5C06;&#x88AB;&#x4E0A;&#x4F20;&#x5230;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x76EE;&#x6807;&#x8DEF;&#x5F84;&#x3002;&#x4F4D;&#x7F6E;&#x5FC5;&#x987B;&#x53EF;&#x5199;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x7236;&#x7EA7;&#x76EE;&#x5F55;&#x5FC5;&#x987B;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x3002;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#xFF08;&#x901A;&#x5E38;&#x4E0D;&#x662F; root&#xFF09;&#x65E0;&#x6CD5;&#x5199;&#x5165;&#x6B64;&#x76EE;&#x5F55;&#xFF0C;&#x60A8;&#x5C06;&#x6536;&#x5230;&#x201C;Permission Denied&#x201D;&#x9519;&#x8BEF;&#x3002;&#x5982;&#x679C;&#x6E90;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x6700;&#x597D;&#x4E5F;&#x628A;&#x76EE;&#x6807;&#x8BBE;&#x7F6E;&#x4E3A;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x5C06;&#x76EE;&#x6807;&#x8BBE;&#x7F6E;&#x4E3A;&#x76EE;&#x5F55;&#xFF0C;&#x81F3;&#x5C11;&#x8981;&#x786E;&#x4FDD;&#x76EE;&#x6807;&#x8DEF;&#x5F84;&#x4EE5;&#x659C;&#x6760;&#x7ED3;&#x5C3E;&#xFF0C;&#x4EE5;&#x4FBF; Packer &#x77E5;&#x9053;&#x4F7F;&#x7528;&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x62FC;&#x63A5;&#x5230;&#x76EE;&#x6807;&#x8DEF;&#x5F84;&#x4E4B;&#x540E;&#x3002;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4; Packer &#x65E0;&#x6CD5;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x8986;&#x76D6;&#x3002;</p>
+<p>&#x9009;&#x586B;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>sources</code> ([]string) - &#x8981;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x5217;&#x8868;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6709;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x8981;&#x4E0A;&#x4F20;&#x5230;&#x540C;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4EE3;&#x66FF; <code>source</code> &#x9009;&#x9879;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x76EE;&#x6807;&#x5FC5;&#x987B;&#x662F;&#x5E26;&#x5C3E;&#x90E8;&#x659C;&#x6760;&#x7684;&#x76EE;&#x5F55;&#xFF0C;<code>sources</code> &#x4E2D;&#x5217;&#x51FA;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x90FD;&#x5C06;&#x4E0A;&#x4F20;&#x5230;&#x540C;&#x4E00;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x4FDD;&#x7559;&#x5176;&#x6587;&#x4EF6;&#x540D;&#x3002;</li>
+<li><code>direction</code> (string) - &#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x7684;&#x65B9;&#x5411;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <code>upload</code>&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; <code>download</code>&#xFF0C;&#x5219;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E2D;&#x7684;&#x6587;&#x4EF6; <code>source</code> &#x5C06;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730; <code>destination</code></li>
+<li><code>generated</code> (bool) - &#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x7528;&#x6237;&#x3002;&#x5982;&#x679C;&#x4E3A; <code>true</code>&#xFF0C;&#x5219;&#x4EC5;&#x5728;&#x4E0A;&#x4F20;&#x524D;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x6784;&#x5EFA;&#x524D;&#x9A8C;&#x8BC1;&#x65F6;&#x68C0;&#x67E5;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x4E0A;&#x4F20;&#x65F6;&#x5373;&#x65F6;&#x5730;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4F1A;&#x5BFC;&#x81F4; Packer &#x53D8;&#x5F97;&#x4F9D;&#x8D56;&#x4E8E;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x3002;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x60A8;&#x5728; Packer &#x8FD0;&#x884C;&#x4E4B;&#x524D;&#x751F;&#x6210;&#x60A8;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4E5F;&#x627F;&#x8BA4;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x3002;</li>
+</ul>
+<p>&#x6240;&#x6709;&#x914D;&#x7F6E;&#x5668;&#x5171;&#x6709;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>pause_before</code> (duration) - &#x6267;&#x884C;&#x524D;&#x4F11;&#x7720;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x3002;</li>
+<li><code>max_retries</code> (int) - provisioner &#x5728;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x91CD;&#x8BD5;&#x7684;&#x6700;&#x5927;&#x6B21;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x96F6; (0)&#x3002;&#x96F6;&#x8868;&#x793A;&#x4E0D;&#x4F1A;&#x91CD;&#x8BD5;&#x9519;&#x8BEF;&#x3002;</li>
+<li><code>only</code> (array of string) - &#x53EA;&#x8FD0;&#x884C;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x7684;&#x914D;&#x7F6E;&#x5668;&#x7A0B;&#x5E8F;&#x3002;</li>
+<li><code>override</code> (object) - &#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x914D;&#x7F6E;&#x5668;&#x7684;&#x4E0D;&#x540C;&#x8BBE;&#x7F6E;&#x8986;&#x76D6;&#x914D;&#x7F6E;&#x5668;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ul>
+<p>HCL2&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl">source <span class="token string">&quot;null&quot;</span> <span class="token string">&quot;example1&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">communicator</span> <span class="token punctuation">=</span> <span class="token string">&quot;none&quot;</span>
+<span class="token punctuation">}</span>
+
+source <span class="token string">&quot;null&quot;</span> <span class="token string">&quot;example2&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">communicator</span> <span class="token punctuation">=</span> <span class="token string">&quot;none&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">build</span> <span class="token punctuation">{</span>
+  <span class="token property">sources</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;source.null.example1&quot;</span>, <span class="token string">&quot;source.null.example2&quot;</span><span class="token punctuation">]</span>
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;shell-local&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;echo not overridden&quot;</span><span class="token punctuation">]</span>
+    <span class="token property">override</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">example1</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+        <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;echo yes overridden&quot;</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Json&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;builders&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;null&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;example1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;communicator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;null&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;example2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;communicator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;provisioners&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shell-local&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;inline&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;echo not overridden&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;override&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;example1&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;inline&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;echo yes overridden&quot;</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li><code>timeout</code>&#xFF08;duration&#xFF09;- &#x5982;&#x679C;&#x914D;&#x7F6E;&#x5668;&#x5B8C;&#x6210;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;&#x914D;&#x7F6E;&#x503C;&#xFF08;&#x4F8B;&#x5982; <code>1h10m1s</code> &#x6216; <code>10m</code>&#xFF09;&#xFF0C;&#x5219;&#x914D;&#x7F6E;&#x5668;&#x5C06;&#x8D85;&#x65F6;&#x5E76;&#x5931;&#x8D25;&#x3002;</li>
+</ul>
+<h2 id="&#x4E0A;&#x4F20;&#x76EE;&#x5F55;">&#x4E0A;&#x4F20;&#x76EE;&#x5F55;</h2>
+<p><code>file</code> &#x914D;&#x7F6E;&#x5668;&#x8FD8;&#x80FD;&#x591F;&#x5C06;&#x5B8C;&#x6574;&#x7684;&#x76EE;&#x5F55;&#x4E0A;&#x4F20;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x3002;&#x4E0A;&#x4F20;&#x76EE;&#x5F55;&#x65F6;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x4E86;&#x89E3;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x4E8B;&#x9879;&#x3002;
+&#x9996;&#x5148;&#xFF0C;&#x76EE;&#x6807;&#x76EE;&#x5F55;&#x5FC5;&#x987B;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x3002;&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5B83;&#xFF0C;&#x8BF7;&#x5728;&#x8FD0;&#x884C;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x4E4B;&#x524D;&#x4F7F;&#x7528; <code>shell</code> &#x914D;&#x7F6E;&#x5668;&#x6765;&#x521B;&#x5EFA;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x76EE;&#x6807;&#x76EE;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x540C;&#x65F6;&#x5F15;&#x53D1;&#x610F;&#x5916;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;<code>source</code> &#x8DEF;&#x5F84;&#x4E0A;&#x5C3E;&#x90E8;&#x662F;&#x5426;&#x6709;&#x659C;&#x6760;&#x5C06;&#x51B3;&#x5B9A;&#x76EE;&#x5F55;&#x540D;&#x79F0;&#x662F;&#x5426;&#x5C06;&#x5D4C;&#x5165;&#x5230;&#x76EE;&#x6807;&#x8DEF;&#x5F84;&#x4E2D;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5426;&#x5C06;&#x521B;&#x5EFA;&#x76EE;&#x6807;&#x3002;&#x6211;&#x4EEC;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>&#x5982;&#x679C; <code>source</code> &#x662F; <code>/foo</code>&#xFF08;&#x5C3E;&#x90E8;&#x6CA1;&#x6709;&#x659C;&#x6760;&#xFF09;&#xFF0C;&#x76EE;&#x6807;&#x662F; <code>/tmp</code>&#xFF0C;&#x90A3;&#x4E48;&#x672C;&#x5730;&#x673A;&#x5668;&#x4E0A; <code>/foo</code> &#x7684;&#x5185;&#x5BB9;&#x5C06;&#x88AB;&#x4E0A;&#x4F20;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E0A;&#x7684; <code>/tmp/foo</code>&#x3002;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E0A;&#x7684; <code>foo</code> &#x76EE;&#x5F55;&#x5C06;&#x7531; Packer &#x521B;&#x5EFA;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6E90;&#x662F; <code>/foo/</code>&#xFF08;&#x5C3E;&#x90E8;&#x6709;&#x659C;&#x6760;&#xFF09;&#xFF0C;&#x800C;&#x76EE;&#x6807;&#x662F; <code>/tmp</code>&#xFF0C;&#x90A3;&#x4E48; <code>/foo</code> &#x7684;&#x5185;&#x5BB9;&#x5C06;&#x76F4;&#x63A5;&#x4E0A;&#x4F20;&#x5230; <code>/tmp</code>&#x3002;</p>
+<p>&#x6B64;&#x884C;&#x4E3A;&#x6E90;&#x81EA; rsync&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;Packer &#x5728;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x4E0D;&#x4E00;&#x5B9A;&#x4F1A;&#x4F7F;&#x7528; rsync&#x3002;</p>
+<h2 id="&#x4E0A;&#x4F20;&#x5728;-packer-&#x8FD0;&#x884C;&#x524D;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;">&#x4E0A;&#x4F20;&#x5728; Packer &#x8FD0;&#x884C;&#x524D;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;</h2>
+<p>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x4F5C;&#x4E3A; <code>source</code> &#x7684;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x5728; Packer &#x8FD0;&#x884C;&#x4E4B;&#x524D;&#x5C31;&#x5DF2;&#x5B58;&#x5728;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x6355;&#x83B7;&#x62FC;&#x5199;&#x9519;&#x8BEF;&#x5E76;&#x786E;&#x4FDD;&#x6784;&#x5EFA;&#x4E00;&#x65E6;&#x5F00;&#x59CB;&#x5C31;&#x4F1A;&#x6210;&#x529F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x60A8;&#x4E0D;&#x80FD;&#x5728;&#x6784;&#x5EFA;&#x671F;&#x95F4;&#x751F;&#x6210;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x5668;&#x4E0A;&#x4F20;&#x5B83;&#x3002;&#x4E00;&#x4E2A;&#x7A8D;&#x95E8;&#x662F;&#x4E0A;&#x4F20;&#x76EE;&#x5F55;&#x800C;&#x4E0D;&#x662F;&#x6587;&#x4EF6;&#x3002;&#x8BE5;&#x76EE;&#x5F55;&#x4ECD;&#x7136;&#x5FC5;&#x987B;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x5176;&#x5185;&#x5BB9;&#x4E00;&#x5F00;&#x59CB;&#x53EF;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x5728; Packer &#x8FD0;&#x884C;&#x671F;&#x95F4;&#x5C06;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x5199;&#x5165;&#x8BE5;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5728;&#x7A0D;&#x540E;&#x4E0A;&#x4F20;&#x3002;</p>
+<h2 id="&#x4E0A;&#x4F20;&#x7B26;&#x53F7;&#x94FE;&#x63A5;">&#x4E0A;&#x4F20;&#x7B26;&#x53F7;&#x94FE;&#x63A5;</h2>
+<p>&#x4E0A;&#x4F20;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x65F6;&#x7684;&#x884C;&#x4E3A;&#x53D6;&#x51B3;&#x4E8E;&#x901A;&#x4FE1;&#x5668;&#x3002; Docker &#x901A;&#x4FE1;&#x5668;&#x5C06;&#x4FDD;&#x7559;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF0C;&#x4F46;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x901A;&#x4FE1;&#x5668;&#x4F1A;&#x5C06;&#x672C;&#x5730;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x89C6;&#x4E3A;&#x5E38;&#x89C4;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x60A8;&#x5E0C;&#x671B;&#x5728;&#x4E0A;&#x4F20;&#x65F6;&#x4FDD;&#x7559;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF0C;&#x5EFA;&#x8BAE;&#x60A8;&#x4F7F;&#x7528; <code>tar</code>&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">$ <span class="token function">ls</span> <span class="token parameter variable">-l</span> files
+total <span class="token number">16</span>
+drwxr-xr-x  <span class="token number">3</span> mwhooker  staff  <span class="token number">102</span> Jan <span class="token number">27</span> <span class="token number">17</span>:10 a
+lrwxr-xr-x  <span class="token number">1</span> mwhooker  staff    <span class="token number">1</span> Jan <span class="token number">27</span> <span class="token number">17</span>:10 b -<span class="token operator">&gt;</span> a
+-rw-r--r--  <span class="token number">1</span> mwhooker  staff    <span class="token number">0</span> Jan <span class="token number">27</span> <span class="token number">17</span>:10 file1
+lrwxr-xr-x  <span class="token number">1</span> mwhooker  staff    <span class="token number">5</span> Jan <span class="token number">27</span> <span class="token number">17</span>:10 file1link -<span class="token operator">&gt;</span> file1
+$ <span class="token function">ls</span> <span class="token parameter variable">-l</span> toupload
+total <span class="token number">0</span>
+-rw-r--r--  <span class="token number">1</span> mwhooker  staff    <span class="token number">0</span> Jan <span class="token number">27</span> <span class="token number">17</span>:10 files.tar
+</code></pre>
+<p>Json&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;provisioners&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shell-local&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tar cf toupload/files.tar files&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;destination&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/tmp/&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;source&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./toupload&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;inline&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;cd /tmp &amp;&amp; tar xf toupload/files.tar&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;rm toupload/files.tar&quot;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shell&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>HCL2&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">build</span> <span class="token punctuation">{</span>
+  <span class="token property">sources</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;source.docker.example&quot;</span>
+  <span class="token punctuation">]</span>
+
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;shell-local&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token property">command</span> <span class="token punctuation">=</span> <span class="token string">&quot;tar cf toupload/files.tar files&quot;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;file&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token property">destination</span> <span class="token punctuation">=</span> <span class="token string">&quot;/tmp/&quot;</span>
+    <span class="token property">source</span>      <span class="token punctuation">=</span> <span class="token string">&quot;./toupload&quot;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;shell&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;cd /tmp &amp;&amp; tar xf toupload/files.tar&quot;</span>,
+      <span class="token string">&quot;rm toupload/files.tar&quot;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;-winrm-&#x4F20;&#x8F93;&#x5927;&#x6587;&#x4EF6;&#x65F6;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#x7684;&#x95EE;&#x9898;">&#x901A;&#x8FC7; WinRM &#x4F20;&#x8F93;&#x5927;&#x6587;&#x4EF6;&#x65F6;&#x901F;&#x5EA6;&#x7F13;&#x6162;&#x7684;&#x95EE;&#x9898;</h2>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684; WinRM &#x4F20;&#x8F93;&#x65B9;&#x5F0F;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x4E2D;&#x7B49;&#x5927;&#x5C0F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E0A;&#x4F20;&#x548C;&#x4E0B;&#x8F7D;&#x53EF;&#x80FD;&#x4E5F;&#x9700;&#x8981;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x60A8;&#x5728; Windows &#x4E0A;&#x4F7F;&#x7528; <code>file</code> &#x914D;&#x7F6E;&#x5668;&#x65F6;&#x9047;&#x5230;&#x7F13;&#x6162;&#x95EE;&#x9898;&#xFF0C;&#x5EFA;&#x8BAE;&#x60A8;&#x8BBE;&#x7F6E; SSH &#x670D;&#x52A1;&#x5E76;&#x4F7F;&#x7528; <a href="../6.communicators/1.ssh.html"><code>ssh</code> &#x901A;&#x4FE1;&#x5668;</a>&#x3002;&#x5982;&#x679C;&#x60A8;&#x53EA;&#x60F3;&#x5C06;&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x7ED9;&#x6784;&#x5EFA;&#x7684;&#x673A;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x60A8;&#x7684;&#x6784;&#x5EFA;&#x5668;&#x652F;&#x6301;&#x4F7F;&#x7528; HTTP&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>http_directory</code> &#x6216; <code>http_content</code> &#x6307;&#x4EE4;&#x3002;&#x8FD9;&#x5C06;&#x4F7F;&#x6784;&#x5EFA;&#x673A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; HTTP &#x6765;&#x8BBF;&#x95EE;&#x8BE5;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x5C06;&#x73AF;&#x5883;&#x53D8;&#x91CF; <code>PACKER_HTTP_ADDR</code> &#x8BBE;&#x7F6E;&#x4E3A;&#x8BE5;&#x5730;&#x5740;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.break_point.html" class="navigation navigation-prev " aria-label="Previous page: 断点">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.powershell.html" class="navigation navigation-next " aria-label="Next page: PowerShell">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文件","level":"1.10.2","depth":2,"next":{"title":"PowerShell","level":"1.10.3","depth":2,"path":"9.provisioners/3.powershell.md","ref":"9.provisioners/3.powershell.md","articles":[]},"previous":{"title":"断点","level":"1.10.1","depth":2,"path":"9.provisioners/1.break_point.md","ref":"9.provisioners/1.break_point.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","prism-themes","fontsettings","sharing","-lunr","-search","search-pro","livereload","image-captions","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-vsc-dark-plus.css"],"lang":{"shell":"bash","cmd":"bash"}},"livereload":{},"search-pro":{},"sitemap-general":{"prefix":"https://lonegunmanb.github.io/packer-handbook/"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism-themes":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"大可不加冰","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: HashiStack","alt":"HashiStack","nro":1,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/Full%2520Stack_onBlack%25402x.png","index":1,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"HashiStack","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"11.postscript/1.html#fig1.12.1.1","level":"1.12.1","list_caption":"Figure: 芯片战争","alt":"芯片战争","nro":2,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715201209.png","index":1,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"芯片战争","attributes":{},"skip":false,"key":"1.12.1.1"},{"backlink":"11.postscript/1.html#fig1.12.1.2","level":"1.12.1","list_caption":"Figure: 芯片的第一个实际应用——激光制导炸弹炸断清化大桥","alt":"芯片的第一个实际应用——激光制导炸弹炸断清化大桥","nro":3,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715211713.png","index":2,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"芯片的第一个实际应用——激光制导炸弹炸断清化大桥","attributes":{},"skip":false,"key":"1.12.1.2"},{"backlink":"11.postscript/1.html#fig1.12.1.3","level":"1.12.1","list_caption":"Figure: Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","alt":"Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","nro":4,"url":"https://raw.githubusercontent.com/lonegunmanb/packer-handbook-pic/main/20230715213557.png","index":3,"caption_template":"图 _PAGE_LEVEL_/_PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Ray Dalio 在《经济机器是如何运行的》动画中总结，人类社会的经济发展短期内受货币和财政政策影响，但在长周期内由生产效率的发展来决定","attributes":{},"skip":false,"key":"1.12.1.3"}]},"title":"《Packer 中文手册》","gitbook":"*"},"file":{"path":"9.provisioners/2.file.md","mtime":"2023-10-04T02:21:00.348Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T12:25:09.052Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+
